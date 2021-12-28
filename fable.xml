@@ -1,75 +1,105 @@
 <fable>
-	<page background="bg1.png">
+<page background="bg1.png">
     
     <agent text="Seja bem-vindo ao novo mundo! " x="20" y="450" font-size="22"/>
     <agent text="Obs: Para prosseguir a narração, clique em cima do diálogo :) " x="20" y="430" font-size="12"/>
-    
- <agent 
-      text="Era uma vez, um cavaleiro que recebeu um pedido diretamente do rei." 
-      x="20" y="380" width="300" on-touch="story2"> 
-      
-      <story2 text="Rei:-Olá, rapaz. Sou o Rei Jorge, e tenho um pedido de socorro para fazê-lo... Minha filha foi capturada e agora está no calabouço do dragão. Você pode me ajudar a trazê-la de volta?" y="320" on-touch="story3"/>
-      <story3 text="Cavaleiro:-É claro, vossa majestade! Vou só meter um lanchão e vou atrás da donzela" "y="350"/> 
-                                                                                                                
-    
-    </agent>
-                                                                  
+ 		<agent 
+      		text="Era uma vez, um cavaleiro que recebeu um pedido diretamente do rei." 
+      		x="30" y="380" width="300" on-touch="story2"> 
+      		<story2 text="Rei:-Olá, rapaz. Sou o Rei Jorge, e tenho um pedido de socorro para fazê-lo... Minha filha foi capturada e agora está no 													calabouço do dragão. Você pode me ajudar a trazê-la de volta?" y="320" on-touch="story3"/>
+      		<story3 text="Cavaleiro:-É claro, vossa majestade! Vou só meter um lanchão e vou atrás da donzela" "y="350"/> 
+    </agent>                                                             
     <agent img="ground1.png" x="0" y="0" width="100" height="100" />
     <agent img="ground2.png" x="100" y="0" width="100" height="100" />
     <agent img="ground2.png" x="200" y="0" width="100" height="100" />
     <agent img="ground2.png" x="300" y="0" width="100" height="100" />
     <agent img="ground2.png" x="400" y="0" width="100" height="100" />
-                                                                                                                                  
-                                                                                                   <agent img="jump1.png" x="400" y="100" width="50" height="50" on-touch="_NEXT_PAGE" />
-                                                                                        
-    <agent img="rei.png" x="220" y="80" width="80" height="150" />                                                                                      
-    <agent img="cavaleiro.png" x="140" y="80" width="80" height="150" />
-  
-                                                                                                                 </page>
-                                                                                              
-                                                                                                   <page background="bg1.png">
-   
-   <agent
-     text="O cavaleiro então após forrar o bucho, seguiu viagem com seu cavalo em busca da princesa que estava em apuros" x="20" y="400" font-size="18" on-touch="_GOTO_PAGE:3" />
-                                                                                                    <agent img="cavalo.png" x="100" y="90" width="180" height="180" />
-                                                                                                
-                                                                                                     <agent img="ground1.png" x="0" y="0" width="100" height="100" />
+    <agent img="jump1.png" x="400" y="100" width="50" height="50" on-touch="_NEXT_PAGE" />
+    <agent img="rei.png" x="220" y="70" width="80" height="150" />                                                                                      
+    <agent img="cavaleiro.png" x="140" y="70" width="80" height="150" />
+    <agent img="castelo-removebg-preview.png" x="-300" y="15" width="400" height="500"/>
+</page>                                                                                          
+<page background="bg1.png">
+		<agent
+     		text="O cavaleiro então após forrar o bucho, seguiu viagem com seu cavalo em busca da princesa que estava em apuros" x="20" y="400" font-					size="18" on-touch="_GOTO_PAGE:3" />
+		<agent img="cavalo.png" x="100" y="90" width="180" height="180" />
+    <agent img="ground1.png" x="0" y="0" width="100" height="100" />
     <agent img="ground2.png" x="100" y="0" width="100" height="100" />
     <agent img="ground2.png" x="200" y="0" width="100" height="100" />
     <agent img="ground2.png" x="300" y="0" width="100" height="100" />
     <agent img="ground2.png" x="400" y="0" width="100" height="100" />
-                                                                                                                   
-                                                                                                                 </page>
-                                                                                                   <page background="bg2.png">
-                                                                                                   <agent text="Após uma longa jornada, finalmente o cavaleiro encontra o esconderijo do dragão." x="20" y="450" font-size="18" />
-    
+      </page>
+<page background="background3.jpeg">
+		<agent
+     		text="E seguiu por caminhos arduos..." x="20" y="450" font-size="18" on-touch="_GOTO_PAGE:4" />
+		<agent img="cavalo.png" x="100" y="90" width="180" height="180" />
+    <agent img="snow1.jpeg" x="0" y="0" width="100" height="100" />
+    <agent img="snow2.jpeg" x="100" y="0" width="100" height="100" />
+    <agent img="snow2.jpeg" x="200" y="0" width="100" height="100" />
+    <agent img="snow2.jpeg" x="300" y="0" width="100" height="100" />
+    <agent img="snow2.jpeg" x="400" y="0" width="100" height="100" />
+      </page>                                                                                                             <page background="bg2.png">
+    <agent text="E então, após uma longa jornada, finalmente o cavaleiro encontra o esconderijo do dragão." x="20" y="450" font-size="18" />
     <agent 
       text="-Droga! A porta está trancada." 
       x="20" y="400" width="300"> 
       
-    </agent>
-    
-                                                                                              
+    </agent>                                                                                          
     <agent img="door1.png" x="400" y="100" width="75" height="100" drop-zone="cut-door">
     	<cut-door img="door3.png" on-touch="_NEXT_PAGE" />
     </agent>
-    
-    <agent 	img="saw.png" x="20" y="300" width="25" height="25" 
+    <agent 	
+      			img="saw.png" x="250" y="100" width="25" height="25" 
       			draggable="true" on-drop="cut-door" 
       			on-zone="disappear" on-trigger="disappear">
-    	
-      <disappear x="-100" />
-      
-                                                                                      
+    				<disappear x="-500" />                                                                          
     </agent>
-                                                                                                   <agent img="sand1.png" x="0"   y="0" width="100" height="100" />
+		<agent img="sand1.png" x="0"   y="0" width="100" height="100" />
     <agent img="sand2.png" x="100" y="0" width="100" height="100" />
     <agent img="sand2.png" x="200" y="0" width="100" height="100" />
     <agent img="sand2.png" x="300" y="0" width="100" height="100" />
     <agent img="sand2.png" x="400" y="0" width="100" height="100" />
-                                                                                                  <agent img="cavalo.png" x="20" y="100" width="180" height="180"/>
-  
-                                                                                                  </page>              
-                                                                                                                 
-                                                                                
+    <agent img="cavalo.png" x="20" y="100" width="180" height="180"/>
+  </page> 
+<page background="bg2.png">
+  	<agent text="Depois de mostrar suas habilidades arrombando portas, o cavaleiro encontra o Dragão e tenta mata-lo com uma lança." x="20" y="350" font-size="18" />                     <agent img="sand1.png" x="0"   y="0" width="100" height="100" />
+    <agent img="sand2.png" x="100" y="0" width="100" height="100" />
+    <agent img="sand2.png" x="200" y="0" width="100" height="100" />
+    <agent img="sand2.png" x="300" y="0" width="100" height="100" />
+    <agent img="sand2.png" x="400" y="0" width="100" height="100" />
+    <agent img="cavalo.png" x="20" y="90" width="180" height="180"/>
+  	<agent img="dragao espelhado.png" x="300" y="70" width="180" height="180" drop-zone="cut-dragon">
+    		<cut-dragon img="tumulo2.png" on-touch="_NEXT_PAGE"/>                                                                                                                   
+    </agent>
+                                                                                                                       
+    <agent 	
+      			img="lanca1.png" x="200" y="100" width="100" height="100" 
+      			draggable="true" on-drop="cut-dragon" 
+      			on-zone="disappear" on-trigger="disappear">
+    				<disappear x="-500" />                                                                          
+    </agent>
+ </page>
+<page background="bg2.png">
+  	<agent text="O cavaleiro finalmente encontra a princesa, mas ela está presa e precisa ser resgatada." x="20" y="450" font-size="18" />                     <agent img="sand1.png" x="0"   y="0" width="100" height="100" />
+    <agent img="sand2.png" x="100" y="0" width="100" height="100" />
+    <agent img="sand2.png" x="200" y="0" width="100" height="100" />
+    <agent img="sand2.png" x="300" y="0" width="100" height="100" />
+    <agent img="sand2.png" x="400" y="0" width="100" height="100" />
+    <agent img="cavalo.png" x="20" y="90" width="180" height="180"/>
+  	<agent img="princesa.png" x="300" y="70" width="100" height="180" on-touch="_NEXT_PAGE"/>
+    <agent img="cadeia.png" x="300" y="90" width="300" height="250" draggable="true"/>
+ </page>
+<page background="bg1.png">
+  <agent text="FIM! " x="25" y="420" font-size="18"/>
+  <agent text="Assim a princesa foi salva e entregue de volta ao seu reino!"x="20" y="450" font-size="22"/>
+    <agent img="ground1.png" x="0" y="0" width="100" height="100" />
+    <agent img="ground2.png" x="100" y="0" width="100" height="100" />
+    <agent img="ground2.png" x="200" y="0" width="100" height="100" />
+    <agent img="ground2.png" x="300" y="0" width="100" height="100" />
+    <agent img="ground2.png" x="400" y="0" width="100" height="100" />
+    <agent img="princesa.png" x="300" y="70" width="100" height="150" />
+    <agent img="cavaleiro.png" x="220" y="70" width="80" height="150" />                                                                                      
+    <agent img="rei.png" x="140" y="70" width="70" height="150" />
+    <agent img="castelo-removebg-preview.png" x="-300" y="15" width="400" height="500"/>
+</page>                                                                                                                      
 </fable>
