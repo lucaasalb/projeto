@@ -17,7 +17,7 @@
     <agent img="jump1.png" x="400" y="100" width="50" height="50" on-touch="_NEXT_PAGE" />
     <agent img="rei.png" x="220" y="70" width="80" height="150" />                                                                                      
     <agent img="cavaleiro.png" x="140" y="70" width="80" height="150" />
-    <agent img="castelo-removebg-preview.png" x="-300" y="15" width="400" height="500"/>
+    <agent img="castelo.png" x="-300" y="15" width="400" height="500"/>
 </page>                                                                                          
 <page background="bg1.png">
 		<agent
@@ -31,7 +31,7 @@
       </page>
 <page background="background3.jpeg">
 		<agent
-     		text="E seguiu por caminhos arduos..." x="20" y="450" font-size="18" on-touch="_GOTO_PAGE:4" />
+     		text="E seguiu por caminhos arduos..." x="20" y="450" color="white" font-size="18" on-touch="_GOTO_PAGE:4" />
 		<agent img="cavalo.png" x="100" y="90" width="180" height="180" />
     <agent img="snow1.jpeg" x="0" y="0" width="100" height="100" />
     <agent img="snow2.jpeg" x="100" y="0" width="100" height="100" />
@@ -92,6 +92,7 @@
 <page background="bg1.png">
   <agent text="FIM! " x="25" y="420" font-size="18"/>
   <agent text="Assim a princesa foi salva e entregue de volta ao seu reino!"x="20" y="450" font-size="22"/>
+  <agent text="Dupla: Lucas Albuquerque e Samir Andrade  :)" x="300" y="300" font-size="15"/>
     <agent img="ground1.png" x="0" y="0" width="100" height="100" />
     <agent img="ground2.png" x="100" y="0" width="100" height="100" />
     <agent img="ground2.png" x="200" y="0" width="100" height="100" />
